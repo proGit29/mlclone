@@ -1,4 +1,5 @@
 import numpy as np
+
 def unit_step(x):
     return np.where(x > 0 , 1 ,0)
 class SLP:
@@ -36,11 +37,7 @@ print(perceptron_and.predict(np.array([0, 0])))
 print(perceptron_and.predict(np.array([0, 1])))
 print(perceptron_and.predict(np.array([1, 0])))
 print(perceptron_and.predict(np.array([1, 1])))
-AND gate
-[[0]]
-[[0]]
-[[0]]
-[[1]]
+
 perceptron_or = SLP()
 perceptron_or.fit(X_or, y_or)
 print("OR gate")
@@ -48,8 +45,3 @@ print(perceptron_or.predict(np.array([0, 0])))
 print(perceptron_or.predict(np.array([0, 1])))
 print(perceptron_or.predict(np.array([1, 0])))
 print(perceptron_or.predict(np.array([1, 1])))
-OR gate
-[[0]]
-[[1]]
-[[1]]
-[[1]]
